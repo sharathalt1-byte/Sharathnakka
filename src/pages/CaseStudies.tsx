@@ -28,38 +28,17 @@ const CaseStudies = () => {
       featured: true
     },
     {
-      id: "sales-automation",
-      title: "Sales Process Automation",
-      company: "GrowthCorp",
-      industry: "Technology",
-      description: "Automated lead qualification and follow-up processes, increasing sales team productivity by 60% and revenue by $1.2M annually.",
-      challenge: "Sales team was spending too much time on administrative tasks instead of selling.",
-      solution: "Built Power Automate workflows to handle lead routing, follow-ups, and data entry automatically.",
+      id: "sla-breach-alert",
+      title: "Proactive SLA Breach Alert System for Support Teams",
+      company: "Support Operations",
+      description: "Automated email alert system prevents SLA breaches by calculating expected completion times and triggering proactive notifications before deadlines.",
       image: aiAutomation,
       metrics: [
-        { icon: TrendingUpIcon, label: "Productivity Boost", value: "60%" },
-        { icon: DollarSignIcon, label: "Revenue Impact", value: "$1.2M" },
-        { icon: ClockIcon, label: "Time Saved", value: "20 hrs/week" }
+        { icon: TrendingUpIcon, label: "Productivity Boost", value: "99.9%" },
+        { icon: DollarSignIcon, label: "Cost Saved", value: "$30K" },
+        { icon: ClockIcon, label: "Solution Delivered", value: "3 days" }
       ],
-      technologies: ["Power Automate", "Dynamics 365", "Power Apps", "Teams Integration"],
-      featured: false
-    },
-    {
-      id: "hr-optimization",
-      title: "HR Process Optimization",
-      company: "InnovateTech",
-      industry: "Professional Services",
-      description: "Streamlined employee onboarding and performance tracking with custom Power Apps solution, reducing admin overhead by 75%.",
-      challenge: "Manual HR processes were slowing down employee onboarding and performance management.",
-      solution: "Developed custom Power Apps for employee self-service and automated workflow management.",
-      image: businessSuccess,
-      metrics: [
-        { icon: TrendingUpIcon, label: "Process Speed", value: "75%" },
-        { icon: DollarSignIcon, label: "Admin Savings", value: "$200K" },
-        { icon: ClockIcon, label: "Onboarding Time", value: "2 days" }
-      ],
-      technologies: ["Power Apps", "SharePoint", "Power Automate", "Office 365"],
-      featured: false
+      tags: ["Power Automate", "Alert System", "Support"]
     },
     {
       id: "financial-reporting",
