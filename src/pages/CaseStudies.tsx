@@ -28,23 +28,6 @@ const CaseStudies = () => {
       featured: true
     },
     {
-      id: "sales-automation",
-      title: "Sales Process Automation",
-      company: "GrowthCorp",
-      industry: "Technology",
-      description: "Automated lead qualification and follow-up processes, increasing sales team productivity by 60% and revenue by $1.2M annually.",
-      challenge: "Sales team was spending too much time on administrative tasks instead of selling.",
-      solution: "Built Power Automate workflows to handle lead routing, follow-ups, and data entry automatically.",
-      image: aiAutomation,
-      metrics: [
-        { icon: TrendingUpIcon, label: "Productivity Boost", value: "60%" },
-        { icon: DollarSignIcon, label: "Revenue Impact", value: "$1.2M" },
-        { icon: ClockIcon, label: "Time Saved", value: "20 hrs/week" }
-      ],
-      technologies: ["Power Automate", "Dynamics 365", "Power Apps", "Teams Integration"],
-      featured: false
-    },
-    {
       id: "hr-optimization",
       title: "HR Process Optimization",
       company: "InnovateTech",
@@ -229,3 +212,4 @@ const CaseStudies = () => {
 };
 
 export default CaseStudies;
+
