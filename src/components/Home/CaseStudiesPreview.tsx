@@ -34,33 +34,7 @@ const CaseStudiesPreview = () => {
       ],
       tags: ["Power Automate", "Alert System", "Support"]
     },
-    {
-      id: "sales-automation",
-      title: "Sales Process Automation",
-      company: "GrowthCorp",
-      description: "Automated lead qualification and follow-up processes, increasing sales team productivity by 60%.",
-      image: aiAutomation,
-      metrics: [
-        { icon: TrendingUpIcon, label: "Productivity Boost", value: "60%" },
-        { icon: DollarSignIcon, label: "Revenue Impact", value: "$1.2M" },
-        { icon: ClockIcon, label: "Time Saved", value: "20 hrs/week" }
-      ],
-      tags: ["Power Automate", "CRM Integration", "Sales"]
-    },
-    {
-      id: "hr-optimization",
-      title: "HR Process Optimization",
-      company: "InnovateTech",
-      description: "Streamlined employee onboarding and performance tracking with custom Power Apps solution.",
-      image: powerBiDemo,
-      metrics: [
-        { icon: TrendingUpIcon, label: "Process Speed", value: "75%" },
-        { icon: DollarSignIcon, label: "Admin Savings", value: "$200K" },
-        { icon: ClockIcon, label: "Onboarding Time", value: "2 days" }
-      ],
-      tags: ["Power Apps", "HR Automation", "Employee Experience"]
-    }
-  ];
+      ];
 
   return (
     <section className="py-20 bg-background">
