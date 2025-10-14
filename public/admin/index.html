@@ -6,13 +6,18 @@
     <title>Content Manager</title>
   </head>
   <body>
+    <!-- Decap CMS will attach to this div -->
+    <div id="nc-root"></div>
+
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
     <script>
-      // Wait until DecapCMS library loads
       window.addEventListener("load", function () {
         if (window.CMS) {
           console.log("✅ Decap CMS loaded successfully");
-          window.CMS.init();
+          CMS.init({
+            config: "/admin/config.yml",
+            root: "#nc-root" // attach CMS to this div
+          });
         } else {
           console.error("❌ Decap CMS failed to load");
         }
