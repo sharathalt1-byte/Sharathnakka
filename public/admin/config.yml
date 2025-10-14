@@ -1,6 +1,6 @@
 local_backend: true
 backend:
-  name: github
+  name: test-repo
   repo: sharathalt1-byte/Sharathnakka
   branch: main
 
