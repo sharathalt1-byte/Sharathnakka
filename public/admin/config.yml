@@ -2,20 +2,17 @@ backend:
   name: github
   repo: sharathalt1-byte/Sharathnakka
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "news"
-    label: "News Articles"
-    folder: "src/news"
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/pages/blog"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Image", name: "image", widget: "image", required: false}
-      - {label: "Content", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown"}
