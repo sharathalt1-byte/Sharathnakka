@@ -3,8 +3,8 @@ backend:
   repo: sharathalt1-byte/Sharathnakka
   branch: main
 
-media_folder: "public/uploads"
-public_folder: "/uploads"
+media_folder: "public/uploads"   # relative to repo root
+public_folder: "/uploads"        # relative to site root
 
 collections:
   - name: "blog"
