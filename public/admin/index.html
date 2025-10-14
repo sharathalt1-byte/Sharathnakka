@@ -1,27 +1,12 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Content Manager</title>
-  </head>
-  <body>
-    <!-- Decap CMS will attach to this div -->
-    <div id="nc-root"></div>
-
-    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-    <script>
-      window.addEventListener("load", function () {
-        if (window.CMS) {
-          console.log("✅ Decap CMS loaded successfully");
-          CMS.init({
-            config: "/admin/config.yml",
-            root: "#nc-root" // attach CMS to this div
-          });
-        } else {
-          console.error("❌ Decap CMS failed to load");
-        }
+<div id="nc-root"></div>
+<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+<script>
+  window.addEventListener("load", function () {
+    if (window.CMS) {
+      CMS.init({
+        config: "/admin/config.yml",
+        root: "#nc-root"
       });
-    </script>
-  </body>
-</html>
+    }
+  });
+</script>
