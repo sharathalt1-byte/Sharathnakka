@@ -1,9 +1,9 @@
-local_backend: true
-
 backend:
   name: github
   repo: sharathalt1-byte/Sharathnakka
   branch: main
+  base_url: https://api.netlify.com
+  auth_endpoint: auth
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
