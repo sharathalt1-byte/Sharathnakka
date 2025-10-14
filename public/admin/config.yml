@@ -1,16 +1,15 @@
-# public/admin/config.yml
 backend:
   name: github
   repo: sharathalt1-byte/Sharathnakka
   branch: main
 
-media_folder: "public/uploads"  # where uploaded media will go (in your repo)
-public_folder: "/uploads"       # URL path to access media
+media_folder: "public/uploads"
+public_folder: "/uploads"
 
 media_library:
-  name: uploadcare   # or cloudinary, or local (uploadcare is easiest for testing)
+  name: uploadcare
   config:
-    publicKey: "demopublickey" # Uploadcare demo key, works for testing
+    publicKey: "demopublickey"
 
 collections:
   - name: "blog"
