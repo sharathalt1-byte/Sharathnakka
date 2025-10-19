@@ -28,6 +28,23 @@ const CaseStudies = () => {
       featured: true
     },
     {
+      id: "sales-automation",
+      title: "Sales Process Automation",
+      company: "GrowthCorp",
+      industry: "Technology",
+      description: "Automated lead qualification and follow-up processes, increasing sales team productivity by 60% and revenue by $1.2M annually.",
+      challenge: "Sales team was spending too much time on administrative tasks instead of selling.",
+      solution: "Built Power Automate workflows to handle lead routing, follow-ups, and data entry automatically.",
+      image: aiAutomation,
+      metrics: [
+        { icon: TrendingUpIcon, label: "Productivity Boost", value: "60%" },
+        { icon: DollarSignIcon, label: "Revenue Impact", value: "$1.2M" },
+        { icon: ClockIcon, label: "Time Saved", value: "20 hrs/week" }
+      ],
+      technologies: ["Power Automate", "Dynamics 365", "Power Apps", "Teams Integration"],
+      featured: false
+    },
+    {
       id: "hr-optimization",
       title: "HR Process Optimization",
       company: "InnovateTech",
@@ -44,29 +61,26 @@ const CaseStudies = () => {
       technologies: ["Power Apps", "SharePoint", "Power Automate", "Office 365"],
       featured: false
     },
-    // REPLACEMENT BELOW
     {
-      id: "sla-breach-alert",
-      title: "Proactive SLA Breach Alert System for Support Teams",
-      company: "Support Operations",
-      industry: "Support", // Added for consistency
-      description: "Automated email alert system prevents SLA breaches by calculating expected completion times and triggering proactive notifications before deadlines.",
-      // Optionally add challenge/solution if you want to show those sections in the UI
-      // challenge: "",
-      // solution: "",
-      image: aiAutomation,
+      id: "financial-reporting",
+      title: "Financial Reporting Automation",
+      company: "FinanceFirst Corp",
+      industry: "Financial Services",
+      description: "Automated monthly financial reporting process, reducing report generation time from 5 days to 2 hours with 99.9% accuracy.",
+      challenge: "Manual report compilation was time-consuming and prone to errors, delaying business decisions.",
+      solution: "Created automated Power BI reports with real-time data connections and scheduled distribution.",
+      image: powerBiDemo,
       metrics: [
-        { icon: TrendingUpIcon, label: "Productivity Boost", value: "99.9%" },
-        { icon: DollarSignIcon, label: "Cost Saved", value: "$30K" },
-        { icon: ClockIcon, label: "Solution Delivered", value: "3 days" }
+        { icon: TrendingUpIcon, label: "Time Reduction", value: "95%" },
+        { icon: DollarSignIcon, label: "Accuracy Improvement", value: "99.9%" },
+        { icon: ClockIcon, label: "Report Generation", value: "2 hours" }
       ],
-      technologies: ["Power Automate", "Alert System", "Support"],
-      tags: ["Power Automate", "Alert System", "Support"], // Optional
+      technologies: ["Power BI", "Excel", "SQL Server", "Power Automate"],
       featured: false
     }
   ];
 
-  const industries = ["All", "Technology", "Professional Services", "Financial Services", "Insurance", "Support"];
+  const industries = ["All", "Technology", "Professional Services", "Financial Services", "Insurance"];
 
   return (
     <div className="min-h-screen bg-background">
@@ -144,6 +158,7 @@ const CaseStudies = () => {
                     <CardDescription className="text-muted-foreground mb-6 leading-relaxed">
                       {study.description}
                     </CardDescription>
+
                     {/* Metrics */}
                     <div className="grid grid-cols-3 gap-4 mb-6">
                       {study.metrics.map((metric, idx) => {
@@ -157,21 +172,22 @@ const CaseStudies = () => {
                         );
                       })}
                     </div>
+
                     {/* Technologies */}
                     <div className="mb-6">
                       <h4 className="font-medium text-foreground mb-3">Technologies Used</h4>
                       <div className="flex flex-wrap gap-2">
-                        {study.technologies &&
-                          study.technologies.map((tech, idx) => (
-                            <span 
-                              key={idx}
-                              className="px-3 py-1 bg-muted text-muted-foreground text-sm rounded-full"
-                            >
-                              {tech}
-                            </span>
-                          ))}
+                        {study.technologies.map((tech, idx) => (
+                          <span 
+                            key={idx}
+                            className="px-3 py-1 bg-muted text-muted-foreground text-sm rounded-full"
+                          >
+                            {tech}
+                          </span>
+                        ))}
                       </div>
                     </div>
+
                     {/* CTA */}
                     <Link to={`/case-studies/${study.id}`}>
                       <Button variant="default" className="w-full group">
@@ -185,6 +201,7 @@ const CaseStudies = () => {
             </div>
           </div>
         </section>
+
         {/* CTA Section */}
         <section className="py-20 gradient-subtle">
           <div className="container mx-auto px-6 text-center">
@@ -206,10 +223,10 @@ const CaseStudies = () => {
           </div>
         </section>
       </main>
+
       <Footer />
     </div>
   );
 };
 
 export default CaseStudies;
-
